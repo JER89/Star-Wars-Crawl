@@ -6,7 +6,17 @@
     <title>Star Wars</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+   
+    <audio id="aud" controls autoplay>
+        <source src="./assets/flute.ogg" type="audio/ogg">
+        <source src="./assets/flute.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+   
+
     <section class="bl">
 
     <div class="bleu"> A long time ago in a galaxy far,</br> far away...</div>
@@ -17,10 +27,24 @@
         <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p></br>
          <p>also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></br> 
-        
+
         </section>
+
     </section>
 
+    
+
+    
+ <script> 
+ var audio = document.getElementById("aud");
+ audio.volume = 0.1 ;
+ setTimeout(function(audio){audio.volume = 1.5;}, 3000);
+
+</script>   
+    
+    
+
 </body>
+
 
 </html>
