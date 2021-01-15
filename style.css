@@ -99,4 +99,15 @@ body {
     }
 }
 
+@keyframes jau {
+    0% {
+        opacity:1;
+        transform:perspective(600px) rotateX(70deg) translateY(160vh);
+    }
+
+    100% {
+        opacity:1;
+        transform: perspective(600px) rotateX(70deg)translateY(-90vh);
+    }
+}
 
